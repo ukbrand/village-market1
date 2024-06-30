@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Design</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .form-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        width: 100%;
+    }
+    input[type="text"], input[type="submit"] {
+        width: calc(100% - 20px); /* Account for the padding */
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .home-button {
+        display: block;
+        width: calc(94% - 20px); 
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .home-button i {
+        margin-right: 8px;
+    }
+    .home-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head> 
+<body>
+<div class="form-container">
+    <form action="ktm">
+        <a href="index.html" class="home-button"><i class="fas fa-home"></i> Home</a>
+        <input type="text" placeholder="Enter your ID here" name="t1">
+        <input type="text" placeholder="Enter Product Name" name="t2">
+        <input type="text" placeholder="Enter Product_ID" name="t3">
+        <input type="text" placeholder="Enter Price" name="t4">
+        <input type="text" placeholder="Enter Stock" name="t5">
+        <input type="text" placeholder="Enter Type/liqued/powder" name="t6">
+        <input type="submit" value="Add Now" name="t7">
+    </form>
+</div>
+</body>
+</html>

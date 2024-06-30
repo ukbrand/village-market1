@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-top: 200px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .home-button {
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .home-button i {
+        margin-right: 8px;
+    }
+
+    .home-button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <a href="index.html" class="home-button"><i class="fas fa-home"></i>Home</a>
+        <form	 action="Update">
+            <center><h1 style="color: #007BFF;"><u>Update Process</u></h1></center>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="ID" required> 
+            
+            <label for="name">Name:</label>
+            <input type="text" id="Name" name="NAME">
+            
+            <label for="salary">PRODUCT_ID:</label> 
+            <input type="text" id="salary" name="PRODUCT_ID">
+            
+            <label for="id">PRICE:</label>
+            <input type="text" id="id" name="PRICE">
+            
+            <label for="name">STOCK:</label>
+            <input type="text" id="STOCK" name="STOCK">
+            
+            <label for="salary">TYPE:</label>
+            <input type="text" id="salary" name="TYPE">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    </script>
+</body>
+</html>
+s

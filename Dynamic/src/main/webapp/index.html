@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-VQK6X7dauuU0lD1GuB4RZmMfgzW7zA5bmtzFOqI0yU0ZgN/Lu5fXZn4yX5cQUM8e3mAnSdq9WvquREyOrW+XtA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            text-decoration: none;
+            font-style: bold;
+            font-weight: 800;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 500px;
+        }
+
+        .container img {
+            width: 230px;
+            position: relative;
+            top: 59px;
+        }
+
+        #h1 {
+            color: #8ea400;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        #span1 {
+            color: #f2ff54;
+        }
+
+        #span2 {
+            color: #5c5cff;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button i {
+            margin-right: 5px;
+        }
+
+        a, button {
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: 0px 0px 4px 0px #59414b;
+        }
+
+        a:hover {
+            color: black;
+            background: gold;
+        }
+        
+        #move {
+            position: relative;
+            bottom: 82px;
+        }
+        
+        .scoll {
+            overflow-y: scroll;
+            height: 270px;  
+        }
+
+        
+        .scoll::-webkit-scrollbar {
+            display: none;
+        }
+
+        
+        .scoll {
+            scrollbar-width: none; 
+        }
+
+        .button1 { background-color: #4CAF50; color: white; }
+        .button2 { background-color: #008CBA; color: white; }
+        .button3 { background-color: #f44336; color: white; }
+        .button4 { background-color: #e7e7e7; color: black; }
+        .button5 { background-color: #555555; color: white; }
+        .button6 { background-color: #FF5722; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="move">
+            <img src="logo123.png" alt="Village Market Logo">
+            <h1 id="h1"><span id="span1">V</span>illage <span id="span2">M</span>arket</h1>
+            <div class="scoll">
+                <a href="mt12" class="button button1"><i class="fas fa-list"></i> Show all Product</a>
+                <a href="insert.html" class="button button2"><i class="fas fa-plus"></i> Add Product</a>
+                <a href="Delete.html" class="button button3"><i class="fas fa-trash-alt"></i> Delete Product</a>
+                <a href="Update.html" class="button button4"><i class="fas fa-edit"></i> Update Product</a>
+                <a href="minStock" class="button button5"><i class="fas fa-exclamation-circle"></i> MinStock less than 2</a>
+                <a href="Sell.html" class="button button6"><i class="fas fa-shopping-cart"></i> Sell Product</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

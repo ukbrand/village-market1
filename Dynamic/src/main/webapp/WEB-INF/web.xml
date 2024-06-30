@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Dynamic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>data</servlet-name>
+  <servlet-class>com.nt.GetAll</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>data</servlet-name>
+  <url-pattern>/mt12</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>ktm12</servlet-name>
+  <servlet-class>com.nt.AddDeta</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ktm12</servlet-name>
+  <url-pattern>/ktm</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>com.nt.DeleteData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Delete</servlet-name>
+  <url-pattern>/Del</url-pattern>
+  </servlet-mapping>
+   
+  
+   <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>com.nt.Update</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>Minstock</servlet-name>
+  <servlet-class>com.nt.MinStock</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Minstock</servlet-name>
+  <url-pattern>/minStock</url-pattern>
+  </servlet-mapping>
+   
+   
+      <servlet>
+  <servlet-name>Sell</servlet-name>
+  <servlet-class>com.nt.SellProduct</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Sell</servlet-name>
+  <url-pattern>/sell</url-pattern>
+  </servlet-mapping>
+   
+</web-app>
